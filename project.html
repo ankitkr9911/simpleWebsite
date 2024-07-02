@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alice&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Roboto Serif", serif;
+            background: url(https://cdn.pixabay.com/photo/2021/11/10/06/23/workout-6783020_1280.jpg);
+            background-attachment:fixed;
+            background-size:100% 100%;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            background-color: black;
+            height: 100px;
+            width:155px;
+        }
+
+        .left img {
+            display: block;
+            width: 133px;
+            height: 52px;
+            margin: auto;
+            width:47%;
+            filter:invert();
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 25px;
+            font-size: 25px;
+            color:white;
+            font-weight: bold;
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            border-radius:12px;
+            display: block;
+            margin: 20px auto;
+            width: 40%;
+            background-color: rgb(155 68 192);
+        }
+
+        .right {
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 20px;
+        }
+
+        .header {
+            /* border: 2px solid blue; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: black;
+            text-decoration: none;
+            padding: 20px 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .navbar li a:hover {
+            background-color: rgb(225, 235, 156);
+            color: rgb(205, 91, 137);
+            text-decoration: underline;
+        }
+
+        .btn {
+            font-family: "Roboto Serif", serif;
+            background-color: rgb(75, 45, 158);
+            color: white;
+            padding: 6px 8px;
+            margin: 12px 10px;
+            font-size: 20px;
+            /* border: 2px solid rgb(6 28 255);
+            border-radius: 10px; */
+        }
+
+        .btn:hover {
+            background-color: green;
+            cursor: pointer;
+        }
+
+        .container{
+            /* border: 2px solid white; */
+            padding: 35px;
+            margin: 32px 70px;
+            width:33%;
+        }
+        .container h1{
+            color:white;
+        }
+        .form-group input{
+            font-family: "Roboto Serif", serif;
+            text-align: center;
+            padding: 6px;
+            margin: 23px auto;
+            border:2px solid black;
+            border-radius: 8px;
+            display:block;
+            width:400px;
+            font-size:20px;
+        }
+        .container h1{
+            text-align: center;
+            font-size: 40px;
+        }
+        .container button{
+            display: block;
+            margin: 20px auto;
+            width:80%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://cdn.pixabay.com/photo/2022/06/29/07/36/gym-logo-7291149_1280.png" alt="">
+            <div>Fitness with Ankit</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best GYM Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <div class="form-group">
+                <input type="tel" name="" placeholder="Enter Your Mobile Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
